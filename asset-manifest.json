@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/depop-shop/static/css/main.1ea3de74.chunk.css",
+    "main.css": "/depop-shop/static/css/main.1b90e126.chunk.css",
     "main.js": "/depop-shop/static/js/main.64343dd8.chunk.js",
     "main.js.map": "/depop-shop/static/js/main.64343dd8.chunk.js.map",
     "runtime-main.js": "/depop-shop/static/js/runtime-main.4ec2ef19.js",
@@ -8,16 +8,16 @@
     "static/js/2.32f86080.chunk.js": "/depop-shop/static/js/2.32f86080.chunk.js",
     "static/js/2.32f86080.chunk.js.map": "/depop-shop/static/js/2.32f86080.chunk.js.map",
     "index.html": "/depop-shop/index.html",
-    "precache-manifest.c3bf61ac81c5e0b953684148c2d5bed0.js": "/depop-shop/precache-manifest.c3bf61ac81c5e0b953684148c2d5bed0.js",
+    "precache-manifest.146d1bed905fdb7fbda0d59d88b9685e.js": "/depop-shop/precache-manifest.146d1bed905fdb7fbda0d59d88b9685e.js",
     "service-worker.js": "/depop-shop/service-worker.js",
-    "static/css/main.1ea3de74.chunk.css.map": "/depop-shop/static/css/main.1ea3de74.chunk.css.map",
+    "static/css/main.1b90e126.chunk.css.map": "/depop-shop/static/css/main.1b90e126.chunk.css.map",
     "static/js/2.32f86080.chunk.js.LICENSE.txt": "/depop-shop/static/js/2.32f86080.chunk.js.LICENSE.txt",
     "static/media/depop_logo.png": "/depop-shop/static/media/depop_logo.d323bd3c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4ec2ef19.js",
     "static/js/2.32f86080.chunk.js",
-    "static/css/main.1ea3de74.chunk.css",
+    "static/css/main.1b90e126.chunk.css",
     "static/js/main.64343dd8.chunk.js"
   ]
 }
