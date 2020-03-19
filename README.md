@@ -1,21 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Depop Shop
 
-## Available Scripts
+An interactive application for browsing, liking and filtering items.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Live site](#live-site)
+- [Running the app](#running-the-app)
+    - [Start](#npm-start)
+    - [Build](#npm-run-build)
+    - [Test](#npm-run-test)
+    - [Learn More](#learn-more)
+- [Notes](#notes)
+- [TODO](#todo)
+    - [Scalable](#scalable)
+    - [Features](#features)
+    - [Design](#design)
+    - [Feedback](#feedback)
+
+## Live Site
+
+Try out the app here - [https://bmanning1.github.io/depop-shop](https://bmanning1.github.io/depop-shop)
+
+## Running the app
+
+Run `npm i` to install the packages.<br />
+To run the app locally, run `npm run start`.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser
+
+### `npm run start`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -27,42 +43,38 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `npm run test`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
+### Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Notes
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- With scalability in mind, the app has been coded so that it will be easy to add more filters
+- The data is transformed to store only the data needed in the component state to save memory in the app
 
-### Analyzing the Bundle Size
+## TODO
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+If there was more time spent on the project, the following areas could be improved.
 
-### Making a Progressive Web App
+### Scalable:
+- Axios request to only load a certain amount & pagination so that you do not load thousands of items at once
+- Use a global store such as Redux to reduce passing down information through components
+- Add linting rules such as complexity
+- Commits for each feature in the git history incase of rolling back
+- Create a config file to store the API url
+- Functional testing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### Features:
+- Filters for more items
+- Option to click on items for more information such as description
+- Change currency based on client
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Design:
+- Error page instead of alert
+- Accessibility
