@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e505d051afe66b6e145629709ad718ca",
+    "revision": "05a19318bbb65b96962c0f8d07464b52",
     "url": "/depop-shop/index.html"
   },
   {
-    "revision": "83839a2f1274b03ec838",
-    "url": "/depop-shop/static/css/main.1b90e126.chunk.css"
+    "revision": "b1983f3a8cf96fd46aba",
+    "url": "/depop-shop/static/css/main.d7fd6910.chunk.css"
   },
   {
     "revision": "dbf41dca8dd4b2a85035",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/depop-shop/static/js/2.32f86080.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "83839a2f1274b03ec838",
+    "revision": "b1983f3a8cf96fd46aba",
     "url": "/depop-shop/static/js/main.64343dd8.chunk.js"
   },
   {
