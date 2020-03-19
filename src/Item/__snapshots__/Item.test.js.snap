@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item: should add liked styling on the heart icon if the item is liked 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -8,11 +8,11 @@
+        alt=\\"Jumper\\"
+        className=\\"item-img\\"
+        src=\\"http://www.imgUrl.com\\"
+      />
+      <button
+-       className=\\"like-button \\"
++       className=\\"like-button liked\\"
+        onClick={[Function onClick]}
+      >
+        <FontAwesomeIcon
+          border={false}
+          className=\\"heart\\""
+`;
+
+exports[`Item: should display size and brand if they are given 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -52,11 +52,23 @@
+      </b>
+       
+      Jumper
+    </p>
+    <p>
++     <span>
++       Brand: 
++       <b>
++         Supreme
++       </b>
++     </span>
+       
++     <span>
++       Size: 
++       <b>
++         L
++       </b>
++     </span>
+    </p>
+    <p>
+      Price 
+      <b>
+        £35.5"
+`;
+
+exports[`Item: should display sold over the image if the item is sold 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -7,10 +7,15 @@
+      <img
+        alt=\\"Jumper\\"
+        className=\\"item-img\\"
+        src=\\"http://www.imgUrl.com\\"
+      />
++     <div
++       className=\\"sold\\"
++     >
++       SOLD
++     </div>
+      <button
+        className=\\"like-button \\"
+        onClick={[Function onClick]}
+      >
+        <FontAwesomeIcon"
+`;
+
+exports[`Item: should match snapshot 1`] = `
+<div
+  className="item"
+>
+  <div
+    className="item-img-container"
+  >
+    <img
+      alt="Jumper"
+      className="item-img"
+      src="http://www.imgUrl.com"
+    />
+    <button
+      className="like-button "
+      onClick={[Function]}
+    >
+      <FontAwesomeIcon
+        border={false}
+        className="heart"
+        fixedWidth={false}
+        flip={null}
+        icon={
+          Object {
+            "icon": Array [
+              512,
+              512,
+              Array [],
+              "f004",
+              "M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z",
+            ],
+            "iconName": "heart",
+            "prefix": "fas",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        size={null}
+        spin={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        transform={null}
+      />
+    </button>
+  </div>
+  <p>
+    <b>
+      @user
+    </b>
+     
+    Jumper
+  </p>
+  <p>
+     
+  </p>
+  <p>
+    Price 
+    <b>
+      £35.5
+    </b>
+  </p>
+</div>
+`;

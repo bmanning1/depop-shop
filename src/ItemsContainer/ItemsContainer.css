@@ -1,0 +1,81 @@
+.items-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items-header {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
+.results-number {
+    margin: 0;
+}
+
+.items-container {
+    margin: 2rem 7rem;
+}
+
+.filter-buttons button {
+    border: rgb(215, 215, 215) solid 1px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.3rem 1rem;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    width: fit-content;
+    margin-top: 1rem;
+    transition: 0.3s;
+    margin-right: 0.5rem;
+}
+
+.filter-buttons button:focus {
+    outline: none
+}
+
+.filter-buttons button.active {
+    border-color: rgb(160, 160, 160);
+    color: white;
+    background-color: rgb(160, 160, 160);
+}
+
+.filter-buttons button:hover {
+    border-color: rgb(215, 215, 215);
+    color: white;
+    background-color: rgb(215, 215, 215);
+}
+
+
+/* Loading */
+.loader {
+    margin: 3rem auto 3rem;
+    text-align: center;
+}
+  
+.loader div {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0.1rem;
+    border-radius: 100%;
+    background-color: red;
+    display: inline-block;
+    animation: grow 1.4s infinite ease-in-out;
+}
+  
+.loader div:nth-of-type(1) {
+    animation-delay: -0.32s;
+}
+  
+.loader div:nth-of-type(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes grow {
+    0%, 100% { 
+        transform: scale(0);
+    } 50% { 
+        transform: scale(1);
+    }
+}
+

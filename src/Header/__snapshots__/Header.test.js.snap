@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header: should match snapshot 1`] = `
+<div
+  className="header"
+>
+  <img
+    alt="depop logo"
+    className="depop-logo"
+    src="depop_logo.png"
+  />
+  <Likes
+    likedItems={
+      Array [
+        Object {
+          "id": 1,
+          "title": "jumper",
+        },
+        Object {
+          "id": 2,
+          "title": "trainers",
+        },
+      ]
+    }
+    unlikeItem={[MockFunction]}
+  />
+</div>
+`;

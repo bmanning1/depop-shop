@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LikeCount: should disable the button if there are no likes 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+  <button
+    className=\\"likes-count\\"
+-   disabled={false}
++   disabled={true}
+    onClick={[Function mockConstructor]}
+  >
+-   2 Likes
++   0 Likes
+  </button>"
+`;
+
+exports[`LikeCount: should display the correct grammer if there is 1 like 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+  <button
+    className=\\"likes-count\\"
+    disabled={false}
+    onClick={[Function mockConstructor]}
+  >
+-   2 Likes
++   1 Like
+  </button>"
+`;
+
+exports[`LikeCount: should match snapshot 1`] = `
+<button
+  className="likes-count"
+  disabled={false}
+  onClick={[MockFunction]}
+>
+  2 Likes
+</button>
+`;
+
+exports[`Likes: should match snapshot 1`] = `
+<div
+  className="likes"
+>
+  <LikeCount
+    likes={2}
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`Likes: when the like count is clicked should not show LikesList if there are no liked items 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+  <div
+    className=\\"likes\\"
+  >
+    <LikeCount
+-     likes={2}
++     likes={0}
+      onClick={[Function onClick]}
+    />
+  </div>"
+`;
+
+exports[`Likes: when the like count is clicked should show LikesList if there are liked items 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -3,6 +3,21 @@
+  >
+    <LikeCount
+      likes={2}
+      onClick={[Function onClick]}
+    />
++   <LikesList
++     likedItems={
++       Array [
++         Object {
++           \\"id\\": 1,
++           \\"title\\": \\"jumper\\",
++         },
++         Object {
++           \\"id\\": 2,
++           \\"title\\": \\"trainers\\",
++         },
++       ]
++     }
++     unlikeItem={[Function mockConstructor]}
++   />
+  </div>"
+`;
+
+exports[`LikesList: should match snapshot 1`] = `
+<ul
+  className="likes-list"
+>
+  <li
+    key="1"
+  >
+    <b>
+      jumper
+    </b>
+     
+    <button
+      onClick={[Function]}
+    >
+      X
+    </button>
+  </li>
+  <li
+    key="2"
+  >
+    <b>
+      trainers
+    </b>
+     
+    <button
+      onClick={[Function]}
+    >
+      X
+    </button>
+  </li>
+</ul>
+`;

@@ -1,0 +1,57 @@
+.likes-list {
+    border: black solid 1px;
+    padding: 0;
+    width: max-content;
+    max-width: 15rem;
+    position: absolute;
+    top: 1.6rem;
+    right: -1rem;
+    background-color: white;
+    z-index: 100;
+    font-size: 1rem;
+}
+
+.likes-list li {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 1.5rem;
+}
+
+.likes-list li button {
+    background: none;
+    border: none;
+    margin: 0 0 0 1rem;
+    padding: 0;
+    font-size: 0.8rem;
+}
+
+.likes-list li button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.likes-count {
+    display: block;
+    border: none;
+    font-weight: 900;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: red;
+}
+
+.likes-count:hover {
+    transition: ease-in;
+    text-decoration: underline;
+}
+
+.likes-count:disabled {
+    color: black;
+}
+
+.likes-count:focus, .likes-list li button:focus {
+    outline: none;
+}
+
+.likes {
+    position: relative;
+}

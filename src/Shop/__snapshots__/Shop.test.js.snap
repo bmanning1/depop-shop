@@ -1,0 +1,325 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shop: should match snapshot 1`] = `
+<Shop>
+  <Header
+    likedItems={Array []}
+    unlikeItem={[Function]}
+  >
+    <div
+      className="header"
+    >
+      <img
+        alt="depop logo"
+        className="depop-logo"
+        src="depop_logo.png"
+      />
+      <Likes
+        likedItems={Array []}
+        unlikeItem={[Function]}
+      >
+        <div
+          className="likes"
+        >
+          <LikeCount
+            likes={0}
+            onClick={[Function]}
+          >
+            <button
+              className="likes-count"
+              disabled={true}
+              onClick={[Function]}
+            >
+              0 Likes
+            </button>
+          </LikeCount>
+        </div>
+      </Likes>
+    </div>
+  </Header>
+  <ItemsContainer
+    items={
+      Array [
+        Object {
+          "brand": undefined,
+          "id": 1,
+          "img": "http://www.imgUrl.com",
+          "liked": false,
+          "price": 35.5,
+          "seller": "@user",
+          "size": "L",
+          "sold": false,
+          "title": "Jumper",
+        },
+        Object {
+          "brand": "Supreme",
+          "id": 2,
+          "img": "http://www.imgUrl.com",
+          "liked": false,
+          "price": 35.5,
+          "seller": "@user",
+          "size": undefined,
+          "sold": false,
+          "title": "Jumper",
+        },
+      ]
+    }
+    loading={false}
+    toggleLike={[Function]}
+  >
+    <div
+      className="items-container"
+    >
+      <div
+        className="items-header"
+      >
+        <h4
+          className="results-number"
+        >
+          2 Results
+        </h4>
+        <div
+          className="filter-buttons"
+        >
+          <FilterButton
+            filter="sold"
+            filters={Array []}
+            label="Hide Sold Items"
+            toggleFilter={[Function]}
+          >
+            <button
+              className=""
+              onClick={[Function]}
+            >
+              Hide Sold Items
+            </button>
+          </FilterButton>
+          <FilterButton
+            filter="liked"
+            filters={Array []}
+            label="Show Liked Items"
+            toggleFilter={[Function]}
+          >
+            <button
+              className=""
+              onClick={[Function]}
+            >
+              Show Liked Items
+            </button>
+          </FilterButton>
+        </div>
+      </div>
+      <div
+        className="items-body"
+      >
+        <Item
+          brand={null}
+          id={1}
+          img="http://www.imgUrl.com"
+          key="1"
+          liked={false}
+          price={35.5}
+          seller="@user"
+          size="L"
+          sold={false}
+          title="Jumper"
+          toggleLike={[Function]}
+        >
+          <div
+            className="item"
+          >
+            <div
+              className="item-img-container"
+            >
+              <img
+                alt="Jumper"
+                className="item-img"
+                src="http://www.imgUrl.com"
+              />
+              <button
+                className="like-button "
+                onClick={[Function]}
+              >
+                <FontAwesomeIcon
+                  border={false}
+                  className="heart"
+                  fixedWidth={false}
+                  flip={null}
+                  icon={
+                    Object {
+                      "icon": Array [
+                        512,
+                        512,
+                        Array [],
+                        "f004",
+                        "M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z",
+                      ],
+                      "iconName": "heart",
+                      "prefix": "fas",
+                    }
+                  }
+                  inverse={false}
+                  listItem={false}
+                  mask={null}
+                  pull={null}
+                  pulse={false}
+                  rotation={null}
+                  size={null}
+                  spin={false}
+                  swapOpacity={false}
+                  symbol={false}
+                  title=""
+                  transform={null}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-heart fa-w-16 heart"
+                    data-icon="heart"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </FontAwesomeIcon>
+              </button>
+            </div>
+            <p>
+              <b>
+                @user
+              </b>
+               
+              Jumper
+            </p>
+            <p>
+               
+              <span>
+                Size: 
+                <b>
+                  L
+                </b>
+              </span>
+            </p>
+            <p>
+              Price 
+              <b>
+                £35.5
+              </b>
+            </p>
+          </div>
+        </Item>
+        <Item
+          brand="Supreme"
+          id={2}
+          img="http://www.imgUrl.com"
+          key="2"
+          liked={false}
+          price={35.5}
+          seller="@user"
+          size={null}
+          sold={false}
+          title="Jumper"
+          toggleLike={[Function]}
+        >
+          <div
+            className="item"
+          >
+            <div
+              className="item-img-container"
+            >
+              <img
+                alt="Jumper"
+                className="item-img"
+                src="http://www.imgUrl.com"
+              />
+              <button
+                className="like-button "
+                onClick={[Function]}
+              >
+                <FontAwesomeIcon
+                  border={false}
+                  className="heart"
+                  fixedWidth={false}
+                  flip={null}
+                  icon={
+                    Object {
+                      "icon": Array [
+                        512,
+                        512,
+                        Array [],
+                        "f004",
+                        "M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z",
+                      ],
+                      "iconName": "heart",
+                      "prefix": "fas",
+                    }
+                  }
+                  inverse={false}
+                  listItem={false}
+                  mask={null}
+                  pull={null}
+                  pulse={false}
+                  rotation={null}
+                  size={null}
+                  spin={false}
+                  swapOpacity={false}
+                  symbol={false}
+                  title=""
+                  transform={null}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="svg-inline--fa fa-heart fa-w-16 heart"
+                    data-icon="heart"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    style={Object {}}
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                      fill="currentColor"
+                      style={Object {}}
+                    />
+                  </svg>
+                </FontAwesomeIcon>
+              </button>
+            </div>
+            <p>
+              <b>
+                @user
+              </b>
+               
+              Jumper
+            </p>
+            <p>
+              <span>
+                Brand: 
+                <b>
+                  Supreme
+                </b>
+              </span>
+               
+            </p>
+            <p>
+              Price 
+              <b>
+                £35.5
+              </b>
+            </p>
+          </div>
+        </Item>
+      </div>
+    </div>
+  </ItemsContainer>
+</Shop>
+`;

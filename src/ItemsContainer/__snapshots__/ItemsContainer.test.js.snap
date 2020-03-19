@@ -1,0 +1,518 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterButton: should add active styling if the filter is on 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+  <button
+-   className=\\"\\"
++   className=\\"active\\"
+    onClick={[Function onClick]}
+  >
+    Hide Sold Items
+  </button>"
+`;
+
+exports[`FilterButton: should match snapshot 1`] = `
+<button
+  className=""
+  onClick={[Function]}
+>
+  Hide Sold Items
+</button>
+`;
+
+exports[`ItemsContainer: should display the correct grammer if there is 1 item 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -5,11 +5,11 @@
+      className=\\"items-header\\"
+    >
+      <h4
+        className=\\"results-number\\"
+      >
+-       3 Results
++       1 Result
+      </h4>
+      <div
+        className=\\"filter-buttons\\"
+      >
+        <FilterButton
+@@ -38,35 +38,9 @@
+        price={35.5}
+        seller=\\"@user1\\"
+        size=\\"L\\"
+        sold={false}
+        title=\\"Jumper\\"
+-       toggleLike={[Function mockConstructor]}
+-     />
+-     <Item
+-       brand=\\"Converse\\"
+-       id={2}
+-       img=\\"http://www.img2Url.com\\"
+-       key=\\"2\\"
+-       liked={false}
+-       price={25}
+-       seller=\\"@user2\\"
+-       size={null}
+-       sold={true}
+-       title=\\"Trainers\\"
+-       toggleLike={[Function mockConstructor]}
+-     />
+-     <Item
+-       brand={null}
+-       id={3}
+-       img=\\"http://www.img3Url.com\\"
+-       key=\\"3\\"
+-       liked={false}
+-       price={10}
+-       seller=\\"@user3\\"
+-       size=\\"M\\"
+-       sold={false}
+-       title=\\"Skirt\\"
+        toggleLike={[Function mockConstructor]}
+      />
+    </div>
+  </div>"
+`;
+
+exports[`ItemsContainer: should filter by "liked" items when the respective filter button is clicked 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -5,24 +5,32 @@
+      className=\\"items-header\\"
+    >
+      <h4
+        className=\\"results-number\\"
+      >
+-       3 Results
++       1 Result
+      </h4>
+      <div
+        className=\\"filter-buttons\\"
+      >
+        <FilterButton
+          filter=\\"sold\\"
+-         filters={Array []}
++         filters={
++           Array [
++             \\"liked\\",
++           ]
++         }
+          label=\\"Hide Sold Items\\"
+          toggleFilter={[Function toggleFilter]}
+        />
+        <FilterButton
+          filter=\\"liked\\"
+-         filters={Array []}
++         filters={
++           Array [
++             \\"liked\\",
++           ]
++         }
+          label=\\"Show Liked Items\\"
+          toggleFilter={[Function toggleFilter]}
+        />
+      </div>
+    </div>
+@@ -38,35 +46,9 @@
+        price={35.5}
+        seller=\\"@user1\\"
+        size=\\"L\\"
+        sold={false}
+        title=\\"Jumper\\"
+-       toggleLike={[Function mockConstructor]}
+-     />
+-     <Item
+-       brand=\\"Converse\\"
+-       id={2}
+-       img=\\"http://www.img2Url.com\\"
+-       key=\\"2\\"
+-       liked={false}
+-       price={25}
+-       seller=\\"@user2\\"
+-       size={null}
+-       sold={true}
+-       title=\\"Trainers\\"
+-       toggleLike={[Function mockConstructor]}
+-     />
+-     <Item
+-       brand={null}
+-       id={3}
+-       img=\\"http://www.img3Url.com\\"
+-       key=\\"3\\"
+-       liked={false}
+-       price={10}
+-       seller=\\"@user3\\"
+-       size=\\"M\\"
+-       sold={false}
+-       title=\\"Skirt\\"
+        toggleLike={[Function mockConstructor]}
+      />
+    </div>
+  </div>"
+`;
+
+exports[`ItemsContainer: should filter by "sold" items when the respective filter button is clicked 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -5,24 +5,32 @@
+      className=\\"items-header\\"
+    >
+      <h4
+        className=\\"results-number\\"
+      >
+-       3 Results
++       2 Results
+      </h4>
+      <div
+        className=\\"filter-buttons\\"
+      >
+        <FilterButton
+          filter=\\"sold\\"
+-         filters={Array []}
++         filters={
++           Array [
++             \\"sold\\",
++           ]
++         }
+          label=\\"Hide Sold Items\\"
+          toggleFilter={[Function toggleFilter]}
+        />
+        <FilterButton
+          filter=\\"liked\\"
+-         filters={Array []}
++         filters={
++           Array [
++             \\"sold\\",
++           ]
++         }
+          label=\\"Show Liked Items\\"
+          toggleFilter={[Function toggleFilter]}
+        />
+      </div>
+    </div>
+@@ -38,23 +46,10 @@
+        price={35.5}
+        seller=\\"@user1\\"
+        size=\\"L\\"
+        sold={false}
+        title=\\"Jumper\\"
+-       toggleLike={[Function mockConstructor]}
+-     />
+-     <Item
+-       brand=\\"Converse\\"
+-       id={2}
+-       img=\\"http://www.img2Url.com\\"
+-       key=\\"2\\"
+-       liked={false}
+-       price={25}
+-       seller=\\"@user2\\"
+-       size={null}
+-       sold={true}
+-       title=\\"Trainers\\"
+        toggleLike={[Function mockConstructor]}
+      />
+      <Item
+        brand={null}
+        id={3}"
+`;
+
+exports[`ItemsContainer: should handle multiple filters 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -5,24 +5,34 @@
+      className=\\"items-header\\"
+    >
+      <h4
+        className=\\"results-number\\"
+      >
+-       3 Results
++       1 Result
+      </h4>
+      <div
+        className=\\"filter-buttons\\"
+      >
+        <FilterButton
+          filter=\\"sold\\"
+-         filters={Array []}
++         filters={
++           Array [
++             \\"sold\\",
++             \\"liked\\",
++           ]
++         }
+          label=\\"Hide Sold Items\\"
+          toggleFilter={[Function toggleFilter]}
+        />
+        <FilterButton
+          filter=\\"liked\\"
+-         filters={Array []}
++         filters={
++           Array [
++             \\"sold\\",
++             \\"liked\\",
++           ]
++         }
+          label=\\"Show Liked Items\\"
+          toggleFilter={[Function toggleFilter]}
+        />
+      </div>
+    </div>
+@@ -38,35 +48,9 @@
+        price={35.5}
+        seller=\\"@user1\\"
+        size=\\"L\\"
+        sold={false}
+        title=\\"Jumper\\"
+-       toggleLike={[Function mockConstructor]}
+-     />
+-     <Item
+-       brand=\\"Converse\\"
+-       id={2}
+-       img=\\"http://www.img2Url.com\\"
+-       key=\\"2\\"
+-       liked={false}
+-       price={25}
+-       seller=\\"@user2\\"
+-       size={null}
+-       sold={true}
+-       title=\\"Trainers\\"
+-       toggleLike={[Function mockConstructor]}
+-     />
+-     <Item
+-       brand={null}
+-       id={3}
+-       img=\\"http://www.img3Url.com\\"
+-       key=\\"3\\"
+-       liked={false}
+-       price={10}
+-       seller=\\"@user3\\"
+-       size=\\"M\\"
+-       sold={false}
+-       title=\\"Skirt\\"
+        toggleLike={[Function mockConstructor]}
+      />
+    </div>
+  </div>"
+`;
+
+exports[`ItemsContainer: should handle no items 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -5,11 +5,11 @@
+      className=\\"items-header\\"
+    >
+      <h4
+        className=\\"results-number\\"
+      >
+-       3 Results
++       0 Results
+      </h4>
+      <div
+        className=\\"filter-buttons\\"
+      >
+        <FilterButton
+@@ -26,47 +26,7 @@
+        />
+      </div>
+    </div>
+    <div
+      className=\\"items-body\\"
+-   >
+-     <Item
+-       brand=\\"Supreme\\"
+-       id={1}
+-       img=\\"http://www.img1Url.com\\"
+-       key=\\"1\\"
+-       liked={true}
+-       price={35.5}
+-       seller=\\"@user1\\"
+-       size=\\"L\\"
+-       sold={false}
+-       title=\\"Jumper\\"
+-       toggleLike={[Function mockConstructor]}
+-     />
+-     <Item
+-       brand=\\"Converse\\"
+-       id={2}
+-       img=\\"http://www.img2Url.com\\"
+-       key=\\"2\\"
+-       liked={false}
+-       price={25}
+-       seller=\\"@user2\\"
+-       size={null}
+-       sold={true}
+-       title=\\"Trainers\\"
+-       toggleLike={[Function mockConstructor]}
+-     />
+-     <Item
+-       brand={null}
+-       id={3}
+-       img=\\"http://www.img3Url.com\\"
+-       key=\\"3\\"
+-       liked={false}
+-       price={10}
+-       seller=\\"@user3\\"
+-       size=\\"M\\"
+-       sold={false}
+-       title=\\"Skirt\\"
+-       toggleLike={[Function mockConstructor]}
+    />
+-   </div>
+  </div>"
+`;
+
+exports[`ItemsContainer: should match snapshot 1`] = `
+<div
+  className="items-container"
+>
+  <div
+    className="items-header"
+  >
+    <h4
+      className="results-number"
+    >
+      3 Results
+    </h4>
+    <div
+      className="filter-buttons"
+    >
+      <FilterButton
+        filter="sold"
+        filters={Array []}
+        label="Hide Sold Items"
+        toggleFilter={[Function]}
+      />
+      <FilterButton
+        filter="liked"
+        filters={Array []}
+        label="Show Liked Items"
+        toggleFilter={[Function]}
+      />
+    </div>
+  </div>
+  <div
+    className="items-body"
+  >
+    <Item
+      brand="Supreme"
+      id={1}
+      img="http://www.img1Url.com"
+      key="1"
+      liked={true}
+      price={35.5}
+      seller="@user1"
+      size="L"
+      sold={false}
+      title="Jumper"
+      toggleLike={[MockFunction]}
+    />
+    <Item
+      brand="Converse"
+      id={2}
+      img="http://www.img2Url.com"
+      key="2"
+      liked={false}
+      price={25}
+      seller="@user2"
+      size={null}
+      sold={true}
+      title="Trainers"
+      toggleLike={[MockFunction]}
+    />
+    <Item
+      brand={null}
+      id={3}
+      img="http://www.img3Url.com"
+      key="3"
+      liked={false}
+      price={10}
+      seller="@user3"
+      size="M"
+      sold={false}
+      title="Skirt"
+      toggleLike={[MockFunction]}
+    />
+  </div>
+</div>
+`;
+
+exports[`ItemsContainer: should show the Loading component and 0 results if loading 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -5,11 +5,11 @@
+      className=\\"items-header\\"
+    >
+      <h4
+        className=\\"results-number\\"
+      >
+-       3 Results
++       0 Results
+      </h4>
+      <div
+        className=\\"filter-buttons\\"
+      >
+        <FilterButton
+@@ -27,46 +27,8 @@
+      </div>
+    </div>
+    <div
+      className=\\"items-body\\"
+    >
+-     <Item
+-       brand=\\"Supreme\\"
+-       id={1}
+-       img=\\"http://www.img1Url.com\\"
+-       key=\\"1\\"
+-       liked={true}
+-       price={35.5}
+-       seller=\\"@user1\\"
+-       size=\\"L\\"
+-       sold={false}
+-       title=\\"Jumper\\"
+-       toggleLike={[Function mockConstructor]}
+-     />
+-     <Item
+-       brand=\\"Converse\\"
+-       id={2}
+-       img=\\"http://www.img2Url.com\\"
+-       key=\\"2\\"
+-       liked={false}
+-       price={25}
+-       seller=\\"@user2\\"
+-       size={null}
+-       sold={true}
+-       title=\\"Trainers\\"
+-       toggleLike={[Function mockConstructor]}
+-     />
+-     <Item
+-       brand={null}
+-       id={3}
+-       img=\\"http://www.img3Url.com\\"
+-       key=\\"3\\"
+-       liked={false}
+-       price={10}
+-       seller=\\"@user3\\"
+-       size=\\"M\\"
+-       sold={false}
+-       title=\\"Skirt\\"
+-       toggleLike={[Function mockConstructor]}
+-     />
++     <Loading />
+    </div>
+  </div>"
+`;
